@@ -1,6 +1,6 @@
 {
   "name": "koa-cors",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "CORS middleware for Koa",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/evert0n/koa-cors.git"
+    "url": "https://github.com/ahauser31/koa-cors.git"
   },
   "keywords": [
     "cors",

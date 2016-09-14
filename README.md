@@ -5,10 +5,12 @@ CORS middleware for Koa
 
 Inspired by the great [node-cors](https://github.com/troygoode/node-cors) module.
 
-## Installation (via [npm](https://npmjs.org/package/koa-cors))
+Updated for Koa 2
+
+## Installation
 
 ```bash
-$ npm install koa-cors
+$ npm install git+ssh://git@github.com:ahauser31/koa-cors.git@next
 ```
 
 ## Usage
