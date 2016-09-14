@@ -10,7 +10,7 @@ Updated for Koa 2
 ## Installation
 
 ```bash
-$ npm install git+ssh://git@github.com:ahauser31/koa-cors.git@next
+$ npm install git+ssh://git@github.com:ahauser31/koa-cors.git#next
 ```
 
 ## Usage
@@ -31,6 +31,10 @@ app.listen(3000);
 ```
 
 ## Options
+
+### returnOnOptionsRequest
+
+A Boolean that specifies if an OPTIONS request should return immediately after setting the headers or be passed on to downstream middleware.
 
 ### origin
 
