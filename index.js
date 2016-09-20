@@ -3,7 +3,7 @@
 /**
  * CORS middleware
  *
- * @param {Object} [options]
+ * @param {Object} [opts]
  * @return {GeneratorFunction}
  * @api public
  */
@@ -60,7 +60,7 @@ module.exports = function getMiddleware (opts) {
     /**
      * Access Control Allow Methods
      */
-    ctx.set('Access-Control-Allow-Methods', options.methods);
+    ctx.set('Access-Control-Allow-Methods', opts.methods);
 
     /**
      * Access Control Allow Headers
@@ -68,7 +68,7 @@ module.exports = function getMiddleware (opts) {
     var headers;
 
     if (opts.headers) {
-      headers = options.headers;
+      headers = opts.headers;
     } else {
       headers = ctx.get('access-control-request-headers');
     }
