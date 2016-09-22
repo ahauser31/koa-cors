@@ -60,6 +60,9 @@ the header, otherwise it is omitted.
 
 Configures the **Access-Control-Allow-Credentials** CORS header. Set to `true`
 to pass the header, otherwise it is omitted.
+NOTE: Credentials are only allowed if no wildcard is used in origin, otherwise
+the browser will reject the response of the server as per the standard. Therefore
+this header will not be included if the origin contains a wildcard
 
 ### methods
 

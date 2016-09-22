@@ -53,9 +53,9 @@ module.exports = function getMiddleware (opts) {
     if (opts.maxAge) ctx.set('Access-Control-Max-Age', opts.maxAge);
 
     /**
-     * Access Control Allow Credentials
+     * Access Control Allow Credentials - only if no wildcarding in origin
      */
-    if (opts.credentials) ctx.set('Access-Control-Allow-Credentials', 'true');
+    if (opts.credentials && origin.indexOf('*') >= 0) ctx.set('Access-Control-Allow-Credentials', 'true');
 
     /**
      * Access Control Allow Methods
